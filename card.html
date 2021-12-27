@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #EBDEF0;
+        }
+
+        p {
+            background-color: transparent;
+            font-family: 'Nunito Sans', sans-serif;
+        }
+
+        section {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            position: relative;
+        }
+
+        .container {
+            background: #EC7063;
+            width: 370px;
+            height: 530px;
+            border-radius: 20px;
+            overflow: hidden;
+            position: absolute;
+            box-shadow: 3px 6px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cover {
+            position: absolute;
+            width: 100%;
+        }
+
+        .cover-container {
+            width: 100%;
+            height: 35%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .profile {
+            position: absolute;
+            width: 100%;
+            
+        }
+
+        .profile-container {
+            width: 160px;
+            height: 160px;
+            position: relative;
+            top: -100px;
+            border: 6px solid #EC7063;
+            border-radius: 30%;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .description-container {
+            background: transparent;
+            position: absolute;
+            top: 265px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .description-container p:nth-child(1) {
+            font-size: 32px;
+            font-weight: 800;
+            color: #FBFCFC;
+            text-align: center;
+            border-bottom-style: dotted;
+            border-bottom-width: 5px;
+        }
+
+        .description-container p:nth-child(2) {
+            font-size: 23px;
+            color: #FBFCFC;
+            text-align: center;
+            top: 25px;
+            position: relative;
+            outline: 4px dotted;
+            padding: 5px;
+        }
+
+        .logo-container {
+            position: absolute;
+            display: flex;
+            width: 100%;
+            top: 375px;
+            justify-content: center;
+        }
+
+        .icon-container {
+            background: white;
+            width: 50px;
+            height: 50px;
+            margin: 30px;
+            border-radius: 25%;
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .logo-container img {
+            position: absolute;
+            width: 100%;
+        }
+
+        button {
+            position: absolute;
+            bottom: 0px;
+            background-color: #B0265B;
+            color: #FBFCFC;
+            font-size: 20px;
+            width: 100%;
+            height: 50px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="cover-container">
+                <img class="cover"
+                    src="https://images.pexels.com/photos/2860804/pexels-photo-2860804.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    alt="img">
+            </div>
+            <div class="profile-container">
+                <img src="https://scontent.fgdl7-1.fna.fbcdn.net/v/t39.30808-6/264122531_1321728281580807_4695975091868863893_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeFkeZDYkOYadjsAeEXTcjmQMdGuAqVJb68x0a4CpUlvrx5qzrRBPMTolcjX6W933jli4xKfBWT9HHyCyz8SnLzy&_nc_ohc=WpN6gBjRkAAAX_ilRAM&_nc_ht=scontent.fgdl7-1.fna&oh=00_AT8xqFZrtPgVF-qtcQnDE1zqYThJT6cy0qmmsbcAhEOjbw&oe=61BE386F"
+                    alt="profile" class="profile">
+            </div>
+            <div class="description-container">
+                <p class="name">Abraham García.</p>
+                <p>Jr. Developer</p>
+            </div>
+
+            <div class="logo-container">
+                <div class="icon-container">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25657.png" alt="github">
+                </div>
+                <div class="icon-container">
+                    <img src="https://cdn-icons.flaticon.com/png/512/3536/premium/3536505.png?token=exp=1639604332~hmac=b5d366b5f94faeef9f40c29d48e741c9"
+                        alt="">
+                </div>
+            </div>
+            <button>
+                😎 ¡Hey!
+            </button>
+
+
+        </div>
+
+
+    </section>
+
+</body>
+
+</html>

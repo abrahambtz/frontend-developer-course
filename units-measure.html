@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades de medida</title>
+    <style>
+        /* 
+        Medidas absolutas y medidas relativas.
+
+        Medidas absolutas:
+        Es una medida que, en una misma pantalla, siempre medirá lo mismo, sin depender de nadie.
+        Medidas relativas: 
+        En el caso de las medidas relativas son aquellas que dependen de algo para poder calcular 
+        su medida, por ejemplo, los porcentajes dependen del elemento padre */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            font-size: 62.5%;
+
+            /* 
+            1 = 16px
+            100% --> 16px/1rem
+              X  --> 10px
+            X = 62.5% 
+            */
+        }
+
+       
+
+        div {
+            width: 200px;
+            height: 200px;
+            background: pink;
+        }
+
+        p {
+            font-size: 3.5rem;
+        }
+
+        .container {
+            background: plum;
+            width: 100vw;
+            height: 100vh;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>abrahambtz</div>
+    <p>developer</p>
+    <div class="container"></div>
+
+</body>
+
+</html>

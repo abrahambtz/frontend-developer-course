@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector 2</title>
+    <style>
+        div p{
+            color: red;
+        }
+        div > div{
+            background-color: royalblue;
+        }
+        .name{
+            background-color: sandybrown;
+        }
+        div + section{
+            background-color: seagreen;
+        }
+        section + div {
+            background-color: red;
+        }
+        .ok{
+            color: white;
+        }
+        div ~ p {
+            color: violet;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <p>Hola</p>
+            <div class="name">abrahambtz</div> 
+        </div>
+        <div>
+            <p>13 de diciembre 2021</p>
+        </div>
+    </div>
+    <div>
+            My real name is Abraham
+        
+    </div>
+    <section>
+        <p>oh, my lastname is García</p>
+    </section>
+    <div>
+        <p class="ok">ok</p>
+    </div>
+    <p>Clase de selectores</p>
+    <p>Clase de selectores</p>
+    <p>Clase de selectores</p>
+    <div>
+        <p>Clase de selectores</p>
+    </div>
+</body>
+</html>
